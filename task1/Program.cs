@@ -7,16 +7,16 @@ Console.WriteLine("Введите число A: ");
 double a = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 double b = Convert.ToDouble(Console.ReadLine());
-
+double max;
+double min;
 if (a>b) 
 {
-    Console.WriteLine("первое число больше второго");
+    max=a;
+    min=b;
 }
-else if (a<b) 
+else 
 {
-    Console.WriteLine("второе число больше первого");
+    max=b;
+    min=a;
 }
-else
-{
-Console.WriteLine("второе и первое числа равны");
-}
+ Console.WriteLine("max=" + max + ", min=" + min);
